@@ -19,7 +19,7 @@
     "start": "node dist-cjs/bin.js",
     "dev": "npx tsc -w",
     "clean": "rm -rf dist-cjs dist-esm node_modules/.cache",
-    "build": "export NODE_AUTH_TOKEN=любой_текс && npm run clean && npx tsc --build tsconfig.cjs.json tsconfig.esm.json",
+    "build": "npm run clean && npx tsc --build tsconfig.cjs.json tsconfig.esm.json",
     "prepack": "npm run build",
     "test": "jest"
   },
